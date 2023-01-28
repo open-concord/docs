@@ -1,8 +1,10 @@
-# docs
-documentation for all concord libraries
+Technical documentation for all concord libraries. For implementation agnostic documentation, see [concord::std](https://github.com/open-concord/standards).
 
-- [Grouped by library](modules.html)
-- [Class index](annotated.html)
+Quick Links:
+- [Core](group__Core.html)
+- [Uttu](group__Uttu.html)
+- [Class Index](annotated.html)
+- [Library Index](modules.html)
 
 Please report all issues to the [bug tracker](https://github.com/open-concord/docs/issues).
 
