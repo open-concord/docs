@@ -125,50 +125,65 @@ $(document).ready(function(){initNavTree('graph_8hpp_source.html',''); initResiz
 <div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="classgraph__model.html">   45</a></span><span class="keyword">class </span><a class="code hl_class" href="classgraph__model.html">graph_model</a> {</div>
 <div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="keyword">public</span>:</div>
 <div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <a class="code hl_class" href="classgraph__model.html">graph_model</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span> </div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <a class="code hl_struct" href="structlinked.html">linked&lt;vertex&gt;</a> get_root();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span> </div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">bool</span> check_rooted();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  std::map&lt;std::string, linked&lt;vertex&gt;&gt; get_graph();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">void</span> set_push_callback(</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    std::function&lt;<span class="keywordtype">void</span>(</div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>      std::map&lt;</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>        std::string,</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <a class="code hl_struct" href="structlinked.html">linked&lt;vertex&gt;</a>&gt;, </div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>      std::unordered_set&lt;std::string&gt;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    )&gt; callback);</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span> </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordtype">void</span> queue_unit(<a class="code hl_struct" href="structvertex.html">vertex</a> to_queue);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">void</span> queue_batch(std::unordered_set&lt;vertex&gt; to_queue);</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">void</span> queue_batch(std::vector&lt;vertex&gt; to_queue);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="keyword">protected</span>:</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  std::map&lt;std::string, linked&lt;vertex&gt;&gt; graph;</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <a class="code hl_struct" href="structlinked.html">linked&lt;vertex&gt;</a>* graph_root;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">bool</span> rooted;</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  std::queue&lt;std::unordered_set&lt;vertex&gt;&gt; awaiting_push_batches;</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  std::atomic&lt;bool&gt; push_proc_active = <span class="keyword">false</span>;</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  std::mutex push_proc_mtx;</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">void</span> link(std::string target);</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">void</span> batch_push(std::unordered_set&lt;vertex&gt; to_push, std::unordered_set&lt;std::string&gt; flags = std::unordered_set&lt;std::string&gt;());</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordtype">void</span> push_proc();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="classgraph__model.html#a97c57a6f776ffc4556d232b9b99d0969">   51</a></span>  <a class="code hl_struct" href="structlinked.html">linked&lt;vertex&gt;</a> <a class="code hl_function" href="classgraph__model.html#a97c57a6f776ffc4556d232b9b99d0969">get_root</a>();</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="classgraph__model.html#a965a8df819caae147cb59658f021ef45">   57</a></span>  <span class="keywordtype">bool</span> <a class="code hl_function" href="classgraph__model.html#a965a8df819caae147cb59658f021ef45">check_rooted</a>();</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  </div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="classgraph__model.html#a22ac02647c22ea2526b9a93c9a338092">   63</a></span>  std::map&lt;std::string, linked&lt;vertex&gt;&gt; <a class="code hl_function" href="classgraph__model.html#a22ac02647c22ea2526b9a93c9a338092">get_graph</a>();</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span> </div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">void</span> set_push_callback(</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    std::function&lt;<span class="keywordtype">void</span>(</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>      std::map&lt;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        std::string,</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <a class="code hl_struct" href="structlinked.html">linked&lt;vertex&gt;</a>&gt;, </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>      std::unordered_set&lt;std::string&gt;</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    )&gt; callback);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classgraph__model.html#a20d8f61abe7850a2c5d207283b5ed7d3">   78</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classgraph__model.html#a20d8f61abe7850a2c5d207283b5ed7d3">queue_unit</a>(<a class="code hl_struct" href="structvertex.html">vertex</a> to_queue);</div>
 <div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  std::unordered_set&lt;vertex&gt; get_connected(std::unordered_set&lt;vertex&gt; to_check);</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> graph_configure(<a class="code hl_struct" href="structvertex.html">vertex</a> root) = 0;</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  <span class="keyword">virtual</span> std::unordered_set&lt;vertex&gt; get_valid(std::unordered_set&lt;vertex&gt; to_check) = 0;</div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> push_response(</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>      std::unordered_set&lt;std::string&gt; new_trips,</div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>      std::unordered_set&lt;std::string&gt; flags = std::unordered_set&lt;std::string&gt;()</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>      ) = 0;</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>};</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span> </div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno"><a class="line" href="classgraph__model.html#a15fa4df3c82bf687a0ca44358ccfc29f">   84</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classgraph__model.html#a15fa4df3c82bf687a0ca44358ccfc29f">queue_batch</a>(std::unordered_set&lt;vertex&gt; to_queue);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="classgraph__model.html#af779d8541b020b9e139765696db0304f">   89</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classgraph__model.html#af779d8541b020b9e139765696db0304f">queue_batch</a>(std::vector&lt;vertex&gt; to_queue);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span><span class="keyword">protected</span>:</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno"><a class="line" href="classgraph__model.html#a3270b79851810830a425451157877fa9">   91</a></span>  std::map&lt;std::string, linked&lt;vertex&gt;&gt; <a class="code hl_variable" href="classgraph__model.html#a3270b79851810830a425451157877fa9">graph</a>; </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno"><a class="line" href="classgraph__model.html#a2e610208236be909997fb452b839bbdb">   92</a></span>  <a class="code hl_struct" href="structlinked.html">linked&lt;vertex&gt;</a>* <a class="code hl_variable" href="classgraph__model.html#a2e610208236be909997fb452b839bbdb">graph_root</a>; </div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno"><a class="line" href="classgraph__model.html#a2f510ab8ddf257cc6a07875c6076252e">   93</a></span>  <span class="keywordtype">bool</span> <a class="code hl_variable" href="classgraph__model.html#a2f510ab8ddf257cc6a07875c6076252e">rooted</a>; </div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  std::queue&lt;std::unordered_set&lt;vertex&gt;&gt; awaiting_push_batches;</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  std::atomic&lt;bool&gt; push_proc_active = <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  std::mutex push_proc_mtx;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno"><a class="line" href="classgraph__model.html#a85e2c7a74273ba7306f9b0b00d5d1b14">  103</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classgraph__model.html#a85e2c7a74273ba7306f9b0b00d5d1b14">link</a>(std::string target);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno"><a class="line" href="classgraph__model.html#a51fe4811d8052f2ec5de32715abac616">  112</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classgraph__model.html#a51fe4811d8052f2ec5de32715abac616">batch_push</a>(std::unordered_set&lt;vertex&gt; to_push, std::unordered_set&lt;std::string&gt; flags = std::unordered_set&lt;std::string&gt;());</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno"><a class="line" href="classgraph__model.html#a91ca8e0639dc4fdfa4001b042ca1b28e">  119</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classgraph__model.html#a91ca8e0639dc4fdfa4001b042ca1b28e">push_proc</a>();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno"><a class="line" href="classgraph__model.html#a4397718c884ac8e7119e29271e9ef751">  126</a></span>  std::unordered_set&lt;vertex&gt; <a class="code hl_function" href="classgraph__model.html#a4397718c884ac8e7119e29271e9ef751">get_connected</a>(std::unordered_set&lt;vertex&gt; to_check);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span> </div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> graph_configure(<a class="code hl_struct" href="structvertex.html">vertex</a> root) = 0;</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keyword">virtual</span> std::unordered_set&lt;vertex&gt; get_valid(std::unordered_set&lt;vertex&gt; to_check) = 0;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span> </div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> push_response(</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>      std::unordered_set&lt;std::string&gt; new_trips,</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>      std::unordered_set&lt;std::string&gt; flags = std::unordered_set&lt;std::string&gt;()</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>      ) = 0;</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>};</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
 <div class="ttc" id="aclassgraph__model_html"><div class="ttname"><a href="classgraph__model.html">graph_model</a></div><div class="ttdoc">Translation model from which interpretive protocols are derived.</div><div class="ttdef"><b>Definition:</b> graph.hpp:45</div></div>
+<div class="ttc" id="aclassgraph__model_html_a15fa4df3c82bf687a0ca44358ccfc29f"><div class="ttname"><a href="classgraph__model.html#a15fa4df3c82bf687a0ca44358ccfc29f">graph_model::queue_batch</a></div><div class="ttdeci">void queue_batch(std::unordered_set&lt; vertex &gt; to_queue)</div><div class="ttdoc">Pushes batches to the queue.</div></div>
+<div class="ttc" id="aclassgraph__model_html_a20d8f61abe7850a2c5d207283b5ed7d3"><div class="ttname"><a href="classgraph__model.html#a20d8f61abe7850a2c5d207283b5ed7d3">graph_model::queue_unit</a></div><div class="ttdeci">void queue_unit(vertex to_queue)</div><div class="ttdoc">Push a singular vertex to queue.</div></div>
+<div class="ttc" id="aclassgraph__model_html_a22ac02647c22ea2526b9a93c9a338092"><div class="ttname"><a href="classgraph__model.html#a22ac02647c22ea2526b9a93c9a338092">graph_model::get_graph</a></div><div class="ttdeci">std::map&lt; std::string, linked&lt; vertex &gt; &gt; get_graph()</div><div class="ttdoc">Retrieve the graph.</div></div>
+<div class="ttc" id="aclassgraph__model_html_a2e610208236be909997fb452b839bbdb"><div class="ttname"><a href="classgraph__model.html#a2e610208236be909997fb452b839bbdb">graph_model::graph_root</a></div><div class="ttdeci">linked&lt; vertex &gt; * graph_root</div><div class="ttdef"><b>Definition:</b> graph.hpp:92</div></div>
+<div class="ttc" id="aclassgraph__model_html_a2f510ab8ddf257cc6a07875c6076252e"><div class="ttname"><a href="classgraph__model.html#a2f510ab8ddf257cc6a07875c6076252e">graph_model::rooted</a></div><div class="ttdeci">bool rooted</div><div class="ttdef"><b>Definition:</b> graph.hpp:93</div></div>
+<div class="ttc" id="aclassgraph__model_html_a3270b79851810830a425451157877fa9"><div class="ttname"><a href="classgraph__model.html#a3270b79851810830a425451157877fa9">graph_model::graph</a></div><div class="ttdeci">std::map&lt; std::string, linked&lt; vertex &gt; &gt; graph</div><div class="ttdef"><b>Definition:</b> graph.hpp:91</div></div>
+<div class="ttc" id="aclassgraph__model_html_a4397718c884ac8e7119e29271e9ef751"><div class="ttname"><a href="classgraph__model.html#a4397718c884ac8e7119e29271e9ef751">graph_model::get_connected</a></div><div class="ttdeci">std::unordered_set&lt; vertex &gt; get_connected(std::unordered_set&lt; vertex &gt; to_check)</div><div class="ttdoc">Retrieve all verticies which are connected to a given set of verticies to a depth of +/- 1.</div></div>
+<div class="ttc" id="aclassgraph__model_html_a51fe4811d8052f2ec5de32715abac616"><div class="ttname"><a href="classgraph__model.html#a51fe4811d8052f2ec5de32715abac616">graph_model::batch_push</a></div><div class="ttdeci">void batch_push(std::unordered_set&lt; vertex &gt; to_push, std::unordered_set&lt; std::string &gt; flags=std::unordered_set&lt; std::string &gt;())</div><div class="ttdoc">Push a batch of verticies to the graph.</div></div>
+<div class="ttc" id="aclassgraph__model_html_a85e2c7a74273ba7306f9b0b00d5d1b14"><div class="ttname"><a href="classgraph__model.html#a85e2c7a74273ba7306f9b0b00d5d1b14">graph_model::link</a></div><div class="ttdeci">void link(std::string target)</div><div class="ttdoc">Link vertex to graph as linked&lt;vertex&gt;</div></div>
+<div class="ttc" id="aclassgraph__model_html_a91ca8e0639dc4fdfa4001b042ca1b28e"><div class="ttname"><a href="classgraph__model.html#a91ca8e0639dc4fdfa4001b042ca1b28e">graph_model::push_proc</a></div><div class="ttdeci">void push_proc()</div><div class="ttdoc">Apply queued verticies.</div></div>
+<div class="ttc" id="aclassgraph__model_html_a965a8df819caae147cb59658f021ef45"><div class="ttname"><a href="classgraph__model.html#a965a8df819caae147cb59658f021ef45">graph_model::check_rooted</a></div><div class="ttdeci">bool check_rooted()</div><div class="ttdoc">Check if the graph is rooted.</div></div>
+<div class="ttc" id="aclassgraph__model_html_a97c57a6f776ffc4556d232b9b99d0969"><div class="ttname"><a href="classgraph__model.html#a97c57a6f776ffc4556d232b9b99d0969">graph_model::get_root</a></div><div class="ttdeci">linked&lt; vertex &gt; get_root()</div><div class="ttdoc">Get graph's root.</div></div>
+<div class="ttc" id="aclassgraph__model_html_af779d8541b020b9e139765696db0304f"><div class="ttname"><a href="classgraph__model.html#af779d8541b020b9e139765696db0304f">graph_model::queue_batch</a></div><div class="ttdeci">void queue_batch(std::vector&lt; vertex &gt; to_queue)</div></div>
 <div class="ttc" id="astructlinked_html"><div class="ttname"><a href="structlinked.html">linked</a></div><div class="ttdoc">A linked wrapper for vertices.</div><div class="ttdef"><b>Definition:</b> graph.hpp:34</div></div>
 <div class="ttc" id="astructlinked_html_a0ecc60bed56bad150965e062e9be5f72"><div class="ttname"><a href="structlinked.html#a0ecc60bed56bad150965e062e9be5f72">linked::children</a></div><div class="ttdeci">std::unordered_set&lt; linked&lt; vertex &gt; * &gt; children</div><div class="ttdef"><b>Definition:</b> graph.hpp:38</div></div>
 <div class="ttc" id="astructlinked_html_ab65776d31e10098717631e21c4101618"><div class="ttname"><a href="structlinked.html#ab65776d31e10098717631e21c4101618">linked::parents</a></div><div class="ttdeci">std::unordered_set&lt; linked&lt; vertex &gt; * &gt; parents</div><div class="ttdef"><b>Definition:</b> graph.hpp:37</div></div>

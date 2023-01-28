@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['server_5fadd_5ffuncs_0',['server_add_funcs',['../classTree.html#a79edfc333e3706197917ecf93ab7bac7',1,'Tree']]],
-  ['server_5froots_1',['server_roots',['../classTree.html#af16e87ee24c68f8c86a8e26b8cde1866',1,'Tree']]]
+  ['ref_0',['ref',['../structlinked.html#af87f21c2eab12fda5a0e048e1f0bd58e',1,'linked']]],
+  ['rooted_1',['rooted',['../classgraph__model.html#a2f510ab8ddf257cc6a07875c6076252e',1,'graph_model']]]
 ];

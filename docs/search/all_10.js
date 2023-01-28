@@ -1,7 +1,8 @@
 var searchData=
 [
-  ['target_5fdir_0',['target_dir',['../classTree.html#aba46119409262a06002c49f4ae1a813c',1,'Tree']]],
-  ['timeout_1',['Timeout',['../structTimeout.html',1,'']]],
-  ['tree_2',['Tree',['../classTree.html',1,'Tree'],['../classTree.html#ad376a7c639d857312f5de2ef47482f68',1,'Tree::Tree()'],['../classTree.html#a8387135b39fc493f65b70cfe890b957c',1,'Tree::Tree(std::string dir)']]],
-  ['trip_3',['trip',['../structlinked.html#acc8ff73ff0c79195445cbb906fc3242e',1,'linked::trip()'],['../structvertex.html#a2a302c7d5651dc04acb1e42a95d16c89',1,'vertex::trip()']]]
+  ['save_0',['save',['../classTree.html#ac53f87806f7f6ee42f9ac0236f7f9517',1,'Tree']]],
+  ['server_5fadd_5ffuncs_1',['server_add_funcs',['../classTree.html#a79edfc333e3706197917ecf93ab7bac7',1,'Tree']]],
+  ['server_5froots_2',['server_roots',['../classTree.html#af16e87ee24c68f8c86a8e26b8cde1866',1,'Tree']]],
+  ['set_5fpow_5freq_3',['set_pow_req',['../classTree.html#aad69e771cbce86c9e87eeac38c137326',1,'Tree']]],
+  ['std_4',['std',['../namespacestd.html',1,'']]]
 ];

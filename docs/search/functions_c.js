@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['tree_0',['Tree',['../classTree.html#ad376a7c639d857312f5de2ef47482f68',1,'Tree::Tree()'],['../classTree.html#a8387135b39fc493f65b70cfe890b957c',1,'Tree::Tree(std::string dir)']]],
-  ['trip_1',['trip',['../structvertex.html#a2a302c7d5651dc04acb1e42a95d16c89',1,'vertex']]]
+  ['save_0',['save',['../classTree.html#ac53f87806f7f6ee42f9ac0236f7f9517',1,'Tree']]],
+  ['set_5fpow_5freq_1',['set_pow_req',['../classTree.html#aad69e771cbce86c9e87eeac38c137326',1,'Tree']]]
 ];

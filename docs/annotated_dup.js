@@ -11,7 +11,7 @@ var annotated_dup =
     [ "debug_struct", "structdebug__struct.html", null ],
     [ "dhms", "structdhms.html", "structdhms" ],
     [ "FlagManager", "structFlagManager.html", "structFlagManager" ],
-    [ "graph_model", "classgraph__model.html", null ],
+    [ "graph_model", "classgraph__model.html", "classgraph__model" ],
     [ "linked", "structlinked.html", "structlinked" ],
     [ "Miner", "classMiner.html", null ],
     [ "np", "structnp.html", "structnp" ],
