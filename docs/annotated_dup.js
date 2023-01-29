@@ -1,9 +1,5 @@
 var annotated_dup =
 [
-    [ "Ctx", null, [
-      [ "Exchange", "structCtx_1_1Exchange.html", null ],
-      [ "Graph", "structCtx_1_1Graph.html", null ]
-    ] ],
     [ "std", "namespacestd.html", [
       [ "hash< block >", "structstd_1_1hash_3_01block_01_4.html", null ]
     ] ],

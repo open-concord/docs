@@ -142,10 +142,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a4397718c884ac8e7119e29271e9ef751"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all verticies which are connected to a given set of verticies to a depth of +/- 1.  <br /></td></tr>
 <tr class="separator:a4397718c884ac8e7119e29271e9ef751"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac892c2d75bbfdd5fa4823a03a060d804"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#ac892c2d75bbfdd5fa4823a03a060d804">graph_configure</a> (<a class="el" href="structvertex.html">vertex</a> root)=0</td></tr>
+<tr class="memdesc:ac892c2d75bbfdd5fa4823a03a060d804"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever we encounter a new root.  <br /></td></tr>
 <tr class="separator:ac892c2d75bbfdd5fa4823a03a060d804"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225013f01f83ecc97e0410a8253990da"><td class="memItemLeft" align="right" valign="top">virtual std::unordered_set&lt; <a class="el" href="structvertex.html">vertex</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a225013f01f83ecc97e0410a8253990da">get_valid</a> (std::unordered_set&lt; <a class="el" href="structvertex.html">vertex</a> &gt; to_check)=0</td></tr>
+<tr class="memdesc:a225013f01f83ecc97e0410a8253990da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitrarily qualify vertices as valid.  <br /></td></tr>
 <tr class="separator:a225013f01f83ecc97e0410a8253990da"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1d714649c90ea2186e1b7c9743156db"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#ab1d714649c90ea2186e1b7c9743156db">push_response</a> (std::unordered_set&lt; std::string &gt; new_trips, std::unordered_set&lt; std::string &gt; flags=std::unordered_set&lt; std::string &gt;())=0</td></tr>
+<tr class="memdesc:ab1d714649c90ea2186e1b7c9743156db"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply new block callbacks.  <br /></td></tr>
 <tr class="separator:ab1d714649c90ea2186e1b7c9743156db"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -156,14 +159,11 @@ Protected Attributes</h2></td></tr>
 <tr class="separator:a2e610208236be909997fb452b839bbdb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f510ab8ddf257cc6a07875c6076252e"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a2f510ab8ddf257cc6a07875c6076252e">rooted</a></td></tr>
 <tr class="separator:a2f510ab8ddf257cc6a07875c6076252e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e875c9389109d71a3944f4476503ef3"><td class="memItemLeft" align="right" valign="top"><a id="a4e875c9389109d71a3944f4476503ef3" name="a4e875c9389109d71a3944f4476503ef3"></a>
-std::queue&lt; std::unordered_set&lt; <a class="el" href="structvertex.html">vertex</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>awaiting_push_batches</b></td></tr>
+<tr class="memitem:a4e875c9389109d71a3944f4476503ef3"><td class="memItemLeft" align="right" valign="top">std::queue&lt; std::unordered_set&lt; <a class="el" href="structvertex.html">vertex</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a4e875c9389109d71a3944f4476503ef3">awaiting_push_batches</a></td></tr>
 <tr class="separator:a4e875c9389109d71a3944f4476503ef3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b33b3e6475361d8f398f42ee66051a2"><td class="memItemLeft" align="right" valign="top"><a id="a5b33b3e6475361d8f398f42ee66051a2" name="a5b33b3e6475361d8f398f42ee66051a2"></a>
-std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>push_proc_active</b> = false</td></tr>
+<tr class="memitem:a5b33b3e6475361d8f398f42ee66051a2"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a5b33b3e6475361d8f398f42ee66051a2">push_proc_active</a> = false</td></tr>
 <tr class="separator:a5b33b3e6475361d8f398f42ee66051a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36de6213db9deb251a808f346206db9"><td class="memItemLeft" align="right" valign="top"><a id="ab36de6213db9deb251a808f346206db9" name="ab36de6213db9deb251a808f346206db9"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>push_proc_mtx</b></td></tr>
+<tr class="memitem:ab36de6213db9deb251a808f346206db9"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#ab36de6213db9deb251a808f346206db9">push_proc_mtx</a></td></tr>
 <tr class="separator:ab36de6213db9deb251a808f346206db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -347,6 +347,15 @@ template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Arbitrarily qualify vertices as valid. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">to_check</td><td>Verticies to evaluate</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Called in <a class="el" href="classgraph__model.html#a51fe4811d8052f2ec5de32715abac616" title="Push a batch of verticies to the graph.">graph_model&lt;vertex&gt;::batch_push</a> </p>
+
 <p>Implemented in <a class="el" href="classTree.html#a0e77934dfe1a1a3dd590551b7a7a12ce">Tree</a>.</p>
 
 </div>
@@ -376,6 +385,15 @@ template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Called whenever we encounter a new root. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">root</td><td>Root vertex</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Called in <a class="el" href="classgraph__model.html#a51fe4811d8052f2ec5de32715abac616" title="Push a batch of verticies to the graph.">graph_model&lt;vertext&gt;::batch_push</a> </p>
 
 <p>Implemented in <a class="el" href="classTree.html#acb0bec136754de88e4a869dd75922e82">Tree</a>.</p>
 
@@ -483,6 +501,16 @@ template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
 </table>
 </div><div class="memdoc">
 
+<p>Apply new block callbacks. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">new_trips</td><td>Tripcode of new blocks </td></tr>
+    <tr><td class="paramname">flags</td><td>Arbitrary flags to pass</td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Called every time there are new evaluated blocks </p>
+
 <p>Implemented in <a class="el" href="classTree.html#aa34114aa71ae4196ff337cd3fb202e9a">Tree</a>.</p>
 
 </div>
@@ -565,6 +593,31 @@ template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="a4e875c9389109d71a3944f4476503ef3" name="a4e875c9389109d71a3944f4476503ef3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4e875c9389109d71a3944f4476503ef3">&#9670;&#160;</a></span>awaiting_push_batches</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::queue&lt;std::unordered_set&lt;<a class="el" href="structvertex.html">vertex</a>&gt; &gt; <a class="el" href="classgraph__model.html">graph_model</a>&lt; <a class="el" href="structvertex.html">vertex</a> &gt;::awaiting_push_batches</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Queued batches </p>
+
+</div>
+</div>
 <a id="a3270b79851810830a425451157877fa9" name="a3270b79851810830a425451157877fa9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a3270b79851810830a425451157877fa9">&#9670;&#160;</a></span>graph</h2>
 
@@ -612,6 +665,56 @@ template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
 </table>
 </div><div class="memdoc">
 <p>Graph root </p>
+
+</div>
+</div>
+<a id="a5b33b3e6475361d8f398f42ee66051a2" name="a5b33b3e6475361d8f398f42ee66051a2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5b33b3e6475361d8f398f42ee66051a2">&#9670;&#160;</a></span>push_proc_active</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::atomic&lt;bool&gt; <a class="el" href="classgraph__model.html">graph_model</a>&lt; <a class="el" href="structvertex.html">vertex</a> &gt;::push_proc_active = false</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Truth state of push proc </p>
+
+</div>
+</div>
+<a id="ab36de6213db9deb251a808f346206db9" name="ab36de6213db9deb251a808f346206db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab36de6213db9deb251a808f346206db9">&#9670;&#160;</a></span>push_proc_mtx</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class <a class="el" href="structvertex.html">vertex</a> &gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::mutex <a class="el" href="classgraph__model.html">graph_model</a>&lt; <a class="el" href="structvertex.html">vertex</a> &gt;::push_proc_mtx</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<p>Memlock of push proc </p>
 
 </div>
 </div>

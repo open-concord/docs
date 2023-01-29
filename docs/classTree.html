@@ -221,10 +221,13 @@ Protected Member Functions</h2></td></tr>
 <tr class="memdesc:a4397718c884ac8e7119e29271e9ef751 inherit pro_methods_classgraph__model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve all verticies which are connected to a given set of verticies to a depth of +/- 1.  <br /></td></tr>
 <tr class="separator:a4397718c884ac8e7119e29271e9ef751 inherit pro_methods_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac892c2d75bbfdd5fa4823a03a060d804 inherit pro_methods_classgraph__model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#ac892c2d75bbfdd5fa4823a03a060d804">graph_configure</a> (<a class="el" href="structblock.html">block</a> root)=0</td></tr>
+<tr class="memdesc:ac892c2d75bbfdd5fa4823a03a060d804 inherit pro_methods_classgraph__model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called whenever we encounter a new root.  <br /></td></tr>
 <tr class="separator:ac892c2d75bbfdd5fa4823a03a060d804 inherit pro_methods_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a225013f01f83ecc97e0410a8253990da inherit pro_methods_classgraph__model"><td class="memItemLeft" align="right" valign="top">virtual std::unordered_set&lt; <a class="el" href="structblock.html">block</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a225013f01f83ecc97e0410a8253990da">get_valid</a> (std::unordered_set&lt; <a class="el" href="structblock.html">block</a> &gt; to_check)=0</td></tr>
+<tr class="memdesc:a225013f01f83ecc97e0410a8253990da inherit pro_methods_classgraph__model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Arbitrarily qualify vertices as valid.  <br /></td></tr>
 <tr class="separator:a225013f01f83ecc97e0410a8253990da inherit pro_methods_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1d714649c90ea2186e1b7c9743156db inherit pro_methods_classgraph__model"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#ab1d714649c90ea2186e1b7c9743156db">push_response</a> (std::unordered_set&lt; std::string &gt; new_trips, std::unordered_set&lt; std::string &gt; flags=std::unordered_set&lt; std::string &gt;())=0</td></tr>
+<tr class="memdesc:ab1d714649c90ea2186e1b7c9743156db inherit pro_methods_classgraph__model"><td class="mdescLeft">&#160;</td><td class="mdescRight">Apply new block callbacks.  <br /></td></tr>
 <tr class="separator:ab1d714649c90ea2186e1b7c9743156db inherit pro_methods_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
@@ -250,14 +253,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dir_linked</b> = fals
 <tr class="separator:a2e610208236be909997fb452b839bbdb inherit pro_attribs_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2f510ab8ddf257cc6a07875c6076252e inherit pro_attribs_classgraph__model"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a2f510ab8ddf257cc6a07875c6076252e">rooted</a></td></tr>
 <tr class="separator:a2f510ab8ddf257cc6a07875c6076252e inherit pro_attribs_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e875c9389109d71a3944f4476503ef3 inherit pro_attribs_classgraph__model"><td class="memItemLeft" align="right" valign="top"><a id="a4e875c9389109d71a3944f4476503ef3" name="a4e875c9389109d71a3944f4476503ef3"></a>
-std::queue&lt; std::unordered_set&lt; <a class="el" href="structblock.html">block</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>awaiting_push_batches</b></td></tr>
+<tr class="memitem:a4e875c9389109d71a3944f4476503ef3 inherit pro_attribs_classgraph__model"><td class="memItemLeft" align="right" valign="top">std::queue&lt; std::unordered_set&lt; <a class="el" href="structblock.html">block</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a4e875c9389109d71a3944f4476503ef3">awaiting_push_batches</a></td></tr>
 <tr class="separator:a4e875c9389109d71a3944f4476503ef3 inherit pro_attribs_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5b33b3e6475361d8f398f42ee66051a2 inherit pro_attribs_classgraph__model"><td class="memItemLeft" align="right" valign="top"><a id="a5b33b3e6475361d8f398f42ee66051a2" name="a5b33b3e6475361d8f398f42ee66051a2"></a>
-std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>push_proc_active</b></td></tr>
+<tr class="memitem:a5b33b3e6475361d8f398f42ee66051a2 inherit pro_attribs_classgraph__model"><td class="memItemLeft" align="right" valign="top">std::atomic&lt; bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#a5b33b3e6475361d8f398f42ee66051a2">push_proc_active</a></td></tr>
 <tr class="separator:a5b33b3e6475361d8f398f42ee66051a2 inherit pro_attribs_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab36de6213db9deb251a808f346206db9 inherit pro_attribs_classgraph__model"><td class="memItemLeft" align="right" valign="top"><a id="ab36de6213db9deb251a808f346206db9" name="ab36de6213db9deb251a808f346206db9"></a>
-std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>push_proc_mtx</b></td></tr>
+<tr class="memitem:ab36de6213db9deb251a808f346206db9 inherit pro_attribs_classgraph__model"><td class="memItemLeft" align="right" valign="top">std::mutex&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgraph__model.html#ab36de6213db9deb251a808f346206db9">push_proc_mtx</a></td></tr>
 <tr class="separator:ab36de6213db9deb251a808f346206db9 inherit pro_attribs_classgraph__model"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -531,7 +531,7 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>push_proc_mtx</
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Set of valid blocks </dd></dl>
 
-<p>Implements <a class="el" href="classgraph__model.html">graph_model&lt; block &gt;</a>.</p>
+<p>Implements <a class="el" href="classgraph__model.html#a225013f01f83ecc97e0410a8253990da">graph_model&lt; block &gt;</a>.</p>
 
 </div>
 </div>
@@ -568,7 +568,7 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>push_proc_mtx</
 </dl>
 <p>Currently only extracts proof of work threshold. </p>
 
-<p>Implements <a class="el" href="classgraph__model.html">graph_model&lt; block &gt;</a>.</p>
+<p>Implements <a class="el" href="classgraph__model.html#ac892c2d75bbfdd5fa4823a03a060d804">graph_model&lt; block &gt;</a>.</p>
 
 </div>
 </div>
@@ -803,7 +803,7 @@ std::mutex&#160;</td><td class="memItemRight" valign="bottom"><b>push_proc_mtx</
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classgraph__model.html">graph_model&lt; block &gt;</a>.</p>
+<p>Implements <a class="el" href="classgraph__model.html#ab1d714649c90ea2186e1b7c9743156db">graph_model&lt; block &gt;</a>.</p>
 
 </div>
 </div>

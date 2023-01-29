@@ -3,9 +3,7 @@ var hierarchy =
     [ "block", "structblock.html", null ],
     [ "debug_struct", "structdebug__struct.html", null ],
     [ "dhms", "structdhms.html", null ],
-    [ "Ctx::Exchange", "structCtx_1_1Exchange.html", null ],
     [ "FlagManager", "structFlagManager.html", null ],
-    [ "Ctx::Graph", "structCtx_1_1Graph.html", null ],
     [ "graph_model< vertex >", "classgraph__model.html", null ],
     [ "graph_model< block >", "classgraph__model.html", [
       [ "Tree", "classTree.html", null ]

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['miner_0',['Miner',['../classMiner.html',1,'']]]
+  ['np_0',['np',['../structnp.html',1,'']]]
 ];

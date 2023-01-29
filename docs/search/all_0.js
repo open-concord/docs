@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['batch_5fpush_0',['batch_push',['../classgraph__model.html#a51fe4811d8052f2ec5de32715abac616',1,'graph_model']]],
-  ['block_1',['block',['../structblock.html',1,'block'],['../structblock.html#a9b390283efee92f54e6eed6c281155ad',1,'block::block()']]]
+  ['awaiting_5fpush_5fbatches_0',['awaiting_push_batches',['../classgraph__model.html#a4e875c9389109d71a3944f4476503ef3',1,'graph_model']]]
 ];

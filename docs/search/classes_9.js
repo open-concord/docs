@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['peer_0',['Peer',['../structPeer.html',1,'']]]
+  ['relay_0',['Relay',['../structRelay.html',1,'']]]
 ];

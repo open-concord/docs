@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['hash_3c_20block_20_3e_0',['hash&lt; block &gt;',['../structstd_1_1hash_3_01block_01_4.html',1,'std']]]
+  ['linked_0',['linked',['../structlinked.html',1,'']]],
+  ['linked_3c_20block_20_3e_1',['linked&lt; block &gt;',['../structlinked.html',1,'']]]
 ];

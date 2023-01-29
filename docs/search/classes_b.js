@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['timeout_0',['Timeout',['../structTimeout.html',1,'']]],
-  ['tree_1',['Tree',['../classTree.html',1,'']]]
+  ['vertex_0',['vertex',['../structvertex.html',1,'']]]
 ];

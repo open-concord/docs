@@ -7,6 +7,6 @@ var searchData=
   ['get_5fpow_5freq_4',['get_pow_req',['../classTree.html#a9111010f429ac11c7b34e034dcea2d73',1,'Tree']]],
   ['get_5fqualifying_5fhashes_5',['get_qualifying_hashes',['../classTree.html#add405cf5fd2baa7ea7118b95b3ba0bfe',1,'Tree']]],
   ['get_5froot_6',['get_root',['../classgraph__model.html#a97c57a6f776ffc4556d232b9b99d0969',1,'graph_model']]],
-  ['get_5fvalid_7',['get_valid',['../classTree.html#a0e77934dfe1a1a3dd590551b7a7a12ce',1,'Tree']]],
-  ['graph_5fconfigure_8',['graph_configure',['../classTree.html#acb0bec136754de88e4a869dd75922e82',1,'Tree']]]
+  ['get_5fvalid_7',['get_valid',['../classgraph__model.html#a225013f01f83ecc97e0410a8253990da',1,'graph_model::get_valid()'],['../classTree.html#a0e77934dfe1a1a3dd590551b7a7a12ce',1,'Tree::get_valid()']]],
+  ['graph_5fconfigure_8',['graph_configure',['../classgraph__model.html#ac892c2d75bbfdd5fa4823a03a060d804',1,'graph_model::graph_configure()'],['../classTree.html#acb0bec136754de88e4a869dd75922e82',1,'Tree::graph_configure()']]]
 ];
