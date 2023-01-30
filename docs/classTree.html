@@ -96,7 +96,7 @@ $(document).ready(function(){initNavTree('classTree.html',''); initResizable(); 
 <a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
 <a href="classTree-members.html">List of all members</a>  </div>
-  <div class="headertitle"><div class="title">Tree Class Reference<div class="ingroups"><a class="el" href="group__Core.html">Core</a></div></div></div>
+  <div class="headertitle"><div class="title">Tree Class Reference<span class="mlabels"><span class="mlabel">abstract</span></span><div class="ingroups"><a class="el" href="group__Core.html">Core</a></div></div></div>
 </div><!--header-->
 <div class="contents">
 
@@ -111,27 +111,24 @@ Inheritance diagram for Tree:</div>
   <img src="classTree.png" usemap="#Tree_map" alt=""/>
   <map id="Tree_map" name="Tree_map">
 <area href="classgraph__model.html" alt="graph_model&lt; block &gt;" shape="rect" coords="0,0,139,24"/>
+<area href="classFileTree.html" title="Filesystem extension of Tree." alt="FileTree" shape="rect" coords="0,112,139,136"/>
   </map>
 </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad376a7c639d857312f5de2ef47482f68"><td class="memItemLeft" align="right" valign="top"><a id="ad376a7c639d857312f5de2ef47482f68" name="ad376a7c639d857312f5de2ef47482f68"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>Tree</b> ()</td></tr>
-<tr class="memdesc:ad376a7c639d857312f5de2ef47482f68"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialisation for non-directory linked Trees. <br /></td></tr>
-<tr class="separator:ad376a7c639d857312f5de2ef47482f68"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8387135b39fc493f65b70cfe890b957c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#a8387135b39fc493f65b70cfe890b957c">Tree</a> (std::string dir)</td></tr>
-<tr class="memdesc:a8387135b39fc493f65b70cfe890b957c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Functionally equivlant to <a class="el" href="classTree.html#aa4c364fc74bd06a6af5c2aa6dad01897" title="Loads a file descriptor for storage.">Tree::load</a>.  <br /></td></tr>
-<tr class="separator:a8387135b39fc493f65b70cfe890b957c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa4c364fc74bd06a6af5c2aa6dad01897"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#aa4c364fc74bd06a6af5c2aa6dad01897">load</a> (std::string dir)</td></tr>
-<tr class="memdesc:aa4c364fc74bd06a6af5c2aa6dad01897"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads a file descriptor for storage.  <br /></td></tr>
-<tr class="separator:aa4c364fc74bd06a6af5c2aa6dad01897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aad69e771cbce86c9e87eeac38c137326"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#aad69e771cbce86c9e87eeac38c137326">set_pow_req</a> (int pow_req)</td></tr>
 <tr class="memdesc:aad69e771cbce86c9e87eeac38c137326"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates a <a class="el" href="classTree.html" title="Default graph interpretation model.">Tree</a>'s Proof of Work requirement.  <br /></td></tr>
 <tr class="separator:aad69e771cbce86c9e87eeac38c137326"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9111010f429ac11c7b34e034dcea2d73"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#a9111010f429ac11c7b34e034dcea2d73">get_pow_req</a> ()</td></tr>
 <tr class="memdesc:a9111010f429ac11c7b34e034dcea2d73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get <a class="el" href="classTree.html" title="Default graph interpretation model.">Tree</a>'s proof of work requirement.  <br /></td></tr>
 <tr class="separator:a9111010f429ac11c7b34e034dcea2d73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1eb490a1a5ad4eda21aa3160d903395b"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#a1eb490a1a5ad4eda21aa3160d903395b">save</a> (<a class="el" href="structblock.html">block</a>)=0</td></tr>
+<tr class="memdesc:a1eb490a1a5ad4eda21aa3160d903395b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Save a block to some storage.  <br /></td></tr>
+<tr class="separator:a1eb490a1a5ad4eda21aa3160d903395b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a30b414e7de0889998e651ee71e6bd090"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#a30b414e7de0889998e651ee71e6bd090">load</a> ()=0</td></tr>
+<tr class="memdesc:a30b414e7de0889998e651ee71e6bd090"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load an initial storage state.  <br /></td></tr>
+<tr class="separator:a30b414e7de0889998e651ee71e6bd090"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9bffd67328df1650d5db4417cae726cc"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#a9bffd67328df1650d5db4417cae726cc">gen_block</a> (std::string cont, std::string s_trip, unsigned long long set_time=timeh::raw(), std::unordered_set&lt; std::string &gt; p_hashes=std::unordered_set&lt; std::string &gt;(), std::string c_trip=std::string{24, '='})</td></tr>
 <tr class="memdesc:a9bffd67328df1650d5db4417cae726cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a new block and applies to tree.  <br /></td></tr>
 <tr class="separator:a9bffd67328df1650d5db4417cae726cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -195,9 +192,6 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-methods" name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:ac53f87806f7f6ee42f9ac0236f7f9517"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#ac53f87806f7f6ee42f9ac0236f7f9517">save</a> (<a class="el" href="structblock.html">block</a> to_save)</td></tr>
-<tr class="memdesc:ac53f87806f7f6ee42f9ac0236f7f9517"><td class="mdescLeft">&#160;</td><td class="mdescRight">Write block to <a class="el" href="classTree.html#aba46119409262a06002c49f4ae1a813c" title="Optionally Tree&#39;s monitored directory.">Tree::target_dir</a>.  <br /></td></tr>
-<tr class="separator:ac53f87806f7f6ee42f9ac0236f7f9517"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acb0bec136754de88e4a869dd75922e82"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#acb0bec136754de88e4a869dd75922e82">graph_configure</a> (<a class="el" href="structblock.html">block</a> root) override</td></tr>
 <tr class="memdesc:acb0bec136754de88e4a869dd75922e82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interprets an established graph.  <br /></td></tr>
 <tr class="separator:acb0bec136754de88e4a869dd75922e82"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -232,17 +226,9 @@ Protected Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pro-attribs" name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:aba46119409262a06002c49f4ae1a813c"><td class="memItemLeft" align="right" valign="top"><a id="aba46119409262a06002c49f4ae1a813c" name="aba46119409262a06002c49f4ae1a813c"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><b>target_dir</b></td></tr>
-<tr class="memdesc:aba46119409262a06002c49f4ae1a813c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optionally <a class="el" href="classTree.html" title="Default graph interpretation model.">Tree</a>'s monitored directory. <br /></td></tr>
-<tr class="separator:aba46119409262a06002c49f4ae1a813c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8ca3674d18975a4008686830484d1bf"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#ad8ca3674d18975a4008686830484d1bf">pow</a> = 0</td></tr>
 <tr class="memdesc:ad8ca3674d18975a4008686830484d1bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Proof of work requirement.  <br /></td></tr>
 <tr class="separator:ad8ca3674d18975a4008686830484d1bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afadbdae23e5959d6583127bb85f5163b"><td class="memItemLeft" align="right" valign="top"><a id="afadbdae23e5959d6583127bb85f5163b" name="afadbdae23e5959d6583127bb85f5163b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>dir_linked</b> = false</td></tr>
-<tr class="memdesc:afadbdae23e5959d6583127bb85f5163b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Status of <a class="el" href="classTree.html#aba46119409262a06002c49f4ae1a813c" title="Optionally Tree&#39;s monitored directory.">Tree::target_dir</a>. <br /></td></tr>
-<tr class="separator:afadbdae23e5959d6583127bb85f5163b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af16e87ee24c68f8c86a8e26b8cde1866"><td class="memItemLeft" align="right" valign="top">std::map&lt; std::string, <a class="el" href="structlinked.html">linked</a>&lt; <a class="el" href="structblock.html">block</a> &gt; * &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTree.html#af16e87ee24c68f8c86a8e26b8cde1866">server_roots</a></td></tr>
 <tr class="memdesc:af16e87ee24c68f8c86a8e26b8cde1866"><td class="mdescLeft">&#160;</td><td class="mdescRight">Referential list of 'server' roots.  <br /></td></tr>
 <tr class="separator:af16e87ee24c68f8c86a8e26b8cde1866"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -262,34 +248,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dir_linked</b> = fals
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Default graph interpretation model. </p>
-</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a8387135b39fc493f65b70cfe890b957c" name="a8387135b39fc493f65b70cfe890b957c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8387135b39fc493f65b70cfe890b957c">&#9670;&#160;</a></span>Tree()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Tree::Tree </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>dir</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Functionally equivlant to <a class="el" href="classTree.html#aa4c364fc74bd06a6af5c2aa6dad01897" title="Loads a file descriptor for storage.">Tree::load</a>. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dir</td><td>Directory to monitor. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
-<h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="ad5e79bbc19ee41b4a8a05fa316f1751c" name="ad5e79bbc19ee41b4a8a05fa316f1751c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5e79bbc19ee41b4a8a05fa316f1751c">&#9670;&#160;</a></span>create_root()</h2>
 
@@ -734,29 +693,31 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dir_linked</b> = fals
 
 </div>
 </div>
-<a id="aa4c364fc74bd06a6af5c2aa6dad01897" name="aa4c364fc74bd06a6af5c2aa6dad01897"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa4c364fc74bd06a6af5c2aa6dad01897">&#9670;&#160;</a></span>load()</h2>
+<a id="a30b414e7de0889998e651ee71e6bd090" name="a30b414e7de0889998e651ee71e6bd090"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a30b414e7de0889998e651ee71e6bd090">&#9670;&#160;</a></span>load()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Tree::load </td>
+          <td class="memname">virtual void Tree::load </td>
           <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>dir</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Loads a file descriptor for storage. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">dir</td><td>Directory to target </td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Load an initial storage state. </p>
+<p>Virtual templates aren't allowed as per std, so you'll need to override with the relvant information in your derived <a class="el" href="classTree.html" title="Default graph interpretation model.">Tree</a> types. </p>
 
 </div>
 </div>
@@ -807,8 +768,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dir_linked</b> = fals
 
 </div>
 </div>
-<a id="ac53f87806f7f6ee42f9ac0236f7f9517" name="ac53f87806f7f6ee42f9ac0236f7f9517"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac53f87806f7f6ee42f9ac0236f7f9517">&#9670;&#160;</a></span>save()</h2>
+<a id="a1eb490a1a5ad4eda21aa3160d903395b" name="a1eb490a1a5ad4eda21aa3160d903395b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1eb490a1a5ad4eda21aa3160d903395b">&#9670;&#160;</a></span>save()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -817,27 +778,29 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><b>dir_linked</b> = fals
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void Tree::save </td>
+          <td class="memname">virtual void Tree::save </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="structblock.html">block</a>&#160;</td>
-          <td class="paramname"><em>to_save</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
+<span class="mlabels"><span class="mlabel">pure virtual</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Write block to <a class="el" href="classTree.html#aba46119409262a06002c49f4ae1a813c" title="Optionally Tree&#39;s monitored directory.">Tree::target_dir</a>. </p>
+<p>Save a block to some storage. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">to_save</td><td>Block to save </td></tr>
+    <tr><td class="paramname">block</td><td>block data </td></tr>
   </table>
   </dd>
 </dl>
+
+<p>Implemented in <a class="el" href="classFileTree.html#aa4b8ab067d53a253bdb8c93d63e764c4">FileTree</a>.</p>
 
 </div>
 </div>

@@ -1,7 +1,5 @@
 var classTree =
 [
-    [ "Tree", "classTree.html#ad376a7c639d857312f5de2ef47482f68", null ],
-    [ "Tree", "classTree.html#a8387135b39fc493f65b70cfe890b957c", null ],
     [ "create_root", "classTree.html#ad5e79bbc19ee41b4a8a05fa316f1751c", null ],
     [ "find_p_hashes", "classTree.html#a17327dde20e30f779d76907f5d85fdf1", null ],
     [ "gen_block", "classTree.html#a9bffd67328df1650d5db4417cae726cc", null ],
@@ -16,13 +14,11 @@ var classTree =
     [ "is_intraserver_childless", "classTree.html#a64ace54e94c7106386671b7f2a7f101d", null ],
     [ "is_intraserver_orphan", "classTree.html#a63a16fc4c26468220b763779f4ada943", null ],
     [ "is_orphan", "classTree.html#a904eb2150f608b5d5e9e4da84f812c8d", null ],
-    [ "load", "classTree.html#aa4c364fc74bd06a6af5c2aa6dad01897", null ],
+    [ "load", "classTree.html#a30b414e7de0889998e651ee71e6bd090", null ],
     [ "push_response", "classTree.html#aa34114aa71ae4196ff337cd3fb202e9a", null ],
-    [ "save", "classTree.html#ac53f87806f7f6ee42f9ac0236f7f9517", null ],
+    [ "save", "classTree.html#a1eb490a1a5ad4eda21aa3160d903395b", null ],
     [ "set_pow_req", "classTree.html#aad69e771cbce86c9e87eeac38c137326", null ],
-    [ "dir_linked", "classTree.html#afadbdae23e5959d6583127bb85f5163b", null ],
     [ "pow", "classTree.html#ad8ca3674d18975a4008686830484d1bf", null ],
     [ "server_add_funcs", "classTree.html#a79edfc333e3706197917ecf93ab7bac7", null ],
-    [ "server_roots", "classTree.html#af16e87ee24c68f8c86a8e26b8cde1866", null ],
-    [ "target_dir", "classTree.html#aba46119409262a06002c49f4ae1a813c", null ]
+    [ "server_roots", "classTree.html#af16e87ee24c68f8c86a8e26b8cde1866", null ]
 ];

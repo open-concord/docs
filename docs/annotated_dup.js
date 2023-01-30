@@ -6,6 +6,7 @@ var annotated_dup =
     [ "block", "structblock.html", "structblock" ],
     [ "debug_struct", "structdebug__struct.html", null ],
     [ "dhms", "structdhms.html", "structdhms" ],
+    [ "FileTree", "classFileTree.html", "classFileTree" ],
     [ "FlagManager", "structFlagManager.html", "structFlagManager" ],
     [ "graph_model", "classgraph__model.html", "classgraph__model" ],
     [ "linked", "structlinked.html", "structlinked" ],

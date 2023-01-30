@@ -6,7 +6,9 @@ var hierarchy =
     [ "FlagManager", "structFlagManager.html", null ],
     [ "graph_model< vertex >", "classgraph__model.html", null ],
     [ "graph_model< block >", "classgraph__model.html", [
-      [ "Tree", "classTree.html", null ]
+      [ "Tree", "classTree.html", [
+        [ "FileTree", "classFileTree.html", null ]
+      ] ]
     ] ],
     [ "std::hash< block >", "structstd_1_1hash_3_01block_01_4.html", null ],
     [ "linked< vertex >", "structlinked.html", null ],
