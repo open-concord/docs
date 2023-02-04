@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['zero_0',['Zero',['../structdhms.html#a62487ff048faf897d636b5538ed11e2e',1,'dhms']]]
+  ['trip_0',['trip',['../structvertex.html#a2a302c7d5651dc04acb1e42a95d16c89',1,'vertex']]]
 ];

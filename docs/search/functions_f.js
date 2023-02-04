@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['_7enp_0',['~np',['../structnp.html#a6c1eb658ab3a7e47513173a69ba5abae',1,'np']]]
+  ['zero_0',['Zero',['../structdhms.html#a62487ff048faf897d636b5538ed11e2e',1,'dhms']]]
 ];
